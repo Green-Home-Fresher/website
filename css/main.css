@@ -1,0 +1,179 @@
+body {
+  font-family: 'Montserrat', sans-serif;
+}
+
+/* Custom background color for the navbar (green) */
+.bg-sidebar {
+  background-color: #102a11; /* Dark green background */
+}
+
+/* Default icon size for large screens */
+.icon {
+  width: 25px;  /* Default icon size for larger screens */
+  height: 25px;
+}
+
+.navbar-nav .nav-link {
+  color: #ffffff; /* White text for better contrast */
+  transition: background-color 0.3s ease, color 0.3s ease;
+  padding-left: 8px; /* Default padding */
+  padding-right: 8px;
+}
+
+/* Hover effect: softer green */
+.navbar-nav .nav-link:hover {
+  background-color: #406d44; /* Softer green on hover */
+  color: #f1f1f1; /* Light text color on hover */
+  border-radius: 4px; /* Optional rounded corners for hover effect */
+}
+
+/* Adjusting for fixed navbar */
+.mt-5 {
+  margin-top: 80px; /* Adjust this to fit the height of your navbar */
+}
+
+/* Adjusting text sizes for small screens */
+
+/* Step 1: Smallest size for extra small screens (below 576px) */
+@media (max-width: 575.98px) {
+  /* Hide large screen elements */
+  #image-lg, #text-paragraph-lg, #header-lg {
+      display: none;
+  }
+
+  /* Show small screen elements */
+  #header-sm, #image-sm, #text-paragraph-sm {
+      display: block;
+  }
+
+  .content-header {
+    font-size: 28px; /* Smaller font size for content header */
+    font-weight:900;
+  }
+
+  .content-text {
+    font-size: 18px; /* Smaller paragraph font size */
+  }
+
+  .text-responsive-navbar {
+    font-size: 12px; /* Increased text size for extra small screens */
+  }
+
+  .icon {
+    width: 12px;  /* Increased icon size for small screens */
+    height: 12px;
+  }
+
+  .navbar-nav .nav-link {
+    padding-left: 5px; /* Slightly increased padding for small screens */
+    padding-right: 5px;
+  }
+}
+
+/* Step 2: Slightly larger for small screens (576px to 767px) */
+@media (min-width: 576px) and (max-width: 767.98px) {
+  /* Hide large screen elements */
+  #image-lg, #text-paragraph-lg, #header-lg {
+      display: none;
+  }
+
+  /* Show small screen elements */
+  #header-sm, #image-sm, #text-paragraph-sm {
+      display: block;
+  }
+
+  .content-header {
+    font-size: 50px; /* Slightly larger content header */
+    font-weight:900;
+  }
+
+  .content-text {
+    font-size: 22px; /* Slightly larger paragraph font size */
+  }
+
+  .text-responsive-navbar {
+    font-size: 20px; /* Increased text size for small screens */
+  }
+
+  .icon {
+    width: 22px;  /* Slightly larger icon size */
+    height: 22px;
+  }
+
+  .navbar-nav .nav-link {
+    padding-left: 6px; /* Increased padding for small screens */
+    padding-right: 6px;
+  }
+}
+
+/* Step 3: Medium size for medium screens (768px to 991px) */
+@media (min-width: 768px) and (max-width: 991.98px) {
+  /* Show large screen elements */
+  #image-lg, #text-paragraph-lg, #header-lg {
+      display: none;
+  }
+
+  /* Hide small screen elements */
+  #header-sm, #image-sm, #text-paragraph-sm {
+      display: block;
+  }
+
+  .content-header {
+    font-size: 56px; /* Default content header size */
+    font-weight:900;
+  }
+
+  .content-text {
+    font-size: 28px; /* Default paragraph size */
+  }
+
+  .text-responsive-navbar {
+    font-size: 28px; /* Increased text size for medium screens */
+  }
+
+  .icon {
+    width: 25px;  /* Medium icon size */
+    height: 25px;
+  }
+
+  .navbar-nav .nav-link {
+    padding-left: 8px; /* Further increase padding */
+    padding-right: 8px;
+  }
+}
+
+/* Step 4: Default size for large screens (992px and up) */
+@media (min-width: 992px) {
+  /* Show large screen elements */
+  #image-lg, #text-paragraph-lg, #header-lg {
+      display: block;
+  }
+
+  /* Hide small screen elements */
+  #header-sm, #image-sm, #text-paragraph-sm {
+      display: none;
+  }
+
+  .content-header {
+    font-size: 72px; /* Larger content header */
+    font-weight:900;
+  }
+
+  .content-text {
+    font-size: 28px; /* Larger paragraph text */
+  }
+
+  .text-responsive-navbar {
+    font-size: 28px; /* Default large text size */
+  }
+
+  .icon {
+    width: 25px;  /* Default large icon size */
+    height: 25px;
+  }
+
+  .navbar-nav .nav-link {
+    padding-left: 8px; /* Default padding */
+    padding-right: 8px;
+  }
+}
